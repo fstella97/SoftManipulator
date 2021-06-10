@@ -1,14 +1,12 @@
-This repository is intended to provide a reference for the code used in the project " 
-The followig code has been developed in Matlab 2020b and requires the package "Gobal Optimum". 
-
 # Introduction
 
-Foobar is a Python library for dealing with word pluralization.
+This repository is intended to provide a reference for the code used in my master thesis on Soft robotics. 
+In ---- finds the optimal stiffness and pose for the soft manipulators, while section ---- presents the low level motor and stiffness control for the hardware.
+The followig code has been developed in Matlab 2020b and requires the package "Gobal Optimization toolbox". 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+The  
 ```bash
 pip install foobar
 ```
