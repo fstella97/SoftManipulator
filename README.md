@@ -3,7 +3,7 @@
 This repository is intended to provide a reference for the code used in my master thesis on Soft robotics. 
 In ---- finds the optimal stiffness and pose for the soft manipulators, while section ---- presents the low level motor and stiffness control for the hardware.
 The followig code has been developed in Matlab 2020b and requires the package "Gobal Optimization toolbox". 
-
+<img src="/Images/rendering.png" alt="My cool logo"/>
 ## Installation
 
 The  
