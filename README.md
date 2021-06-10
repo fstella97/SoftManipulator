@@ -5,7 +5,7 @@ The code in [Optimal pose-stiffness](https://github.com/fstella97/SoftManipulato
 The followig code has been developed in Matlab 2020b and C++. The matlab package "Gobal Optimization toolbox" is required. 
 <img src="/Images/rendering.jpg" alt="Rendering of the soft manipulator"/>
 ## Results
-[![IMAGE ALT TEXT](https://www.youtube.com/watch?v=Uv5C1roZA9g/0.jpg)](https://www.youtube.com/watch?v=Uv5C1roZA9g)
+[![IMAGE ALT TEXT](https://www.youtube.com/watch?v=Uv5C1roZA9g)](https://www.youtube.com/watch?v=Uv5C1roZA9g)
  
 ```bash
 pip install foobar
