@@ -87,9 +87,10 @@ function [x,y,z]=tubeplot(curve,r,color,n,ct)
   if nargout<3
       cMap = interp1([0;1],[0.9290, 0.6940, 0.1250	; 0.6350, 0.0780, 0.1840],linspace(0,1,256));% to change the colors in the scale 
       colormap(cMap)
+      caxis([0.1 1.5])
       s=surf(x,y,z,color,'FaceAlpha',0.7,'EdgeAlpha',0.2);c=colorbar;c.TickLabelInterpreter='latex';c.Label.String = 'Internal Pressure [bar]';
       c.Label.Interpreter = 'latex';
       %s.EdgeColor = 'none';
-      caxis([1 1.5])
+      
   end
   

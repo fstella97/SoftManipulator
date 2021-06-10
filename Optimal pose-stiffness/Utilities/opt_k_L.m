@@ -22,7 +22,6 @@ x_quadprog = quadprog(H,f,A,b,Aeq,beq,lb,ub,[],options);
 %plotting ellipses
 % K_desired=(inv(diag(goal_compliance)));
 J_end=J_evaluator_variableL(q_L');
-diag(x_quadprog);
 K_opt=J_end*diag(x_quadprog)*J_end';
 x_quadprog_bend=[x_quadprog(1),x_quadprog(2),x_quadprog(4),x_quadprog(5),x_quadprog(7),x_quadprog(8)]';
 pressure=x_quadprog_bend;

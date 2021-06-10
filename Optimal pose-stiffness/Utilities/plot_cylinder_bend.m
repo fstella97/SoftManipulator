@@ -81,7 +81,7 @@ body2(m,:)=q2l/(q2c)*[cos(q2a)*C2;
 % rack3_2(m,:)=rack30+(q2l-q2c*rack30(1)*cos(q2a)-q2c*rack30(2)*sin(q2a))/(q2c)*[cos(q2a)*C2;
 %                                                                              sin(q2a)*C2;...
 %                                                                              S2]; 
-c=[c;pressure(2)*ones(1,n+1)];    
+c=[c;pressure(4)*ones(1,n+1)];    
 body2(m,:)=  [body1(end,:)'+R1* body2(m,:)']'  ;    
 % rack1_2(m,:)=[body1(end,:)'+R1* rack1_2(m,:)']';  
 % rack2_2(m,:)=[body1(end,:)'+R1* rack2_2(m,:)']';  
@@ -106,7 +106,7 @@ body3(m,:)=q3l/(q3c)*[cos(q3a)*C3;
 %                                                                              sin(q3a)*C3;...
 %                                                                              S3]; 
 %
-c=[c;pressure(3)*ones(1,n+1)];    
+c=[c;pressure(6)*ones(1,n+1)];    
 body3(m,:)=  [body2(end,:)'+R2* body3(m,:)']'  ;    
 % rack1_3(m,:)=[body2(end,:)'+R2* rack1_3(m,:)']';  
 % rack2_3(m,:)=[body2(end,:)'+R2* rack2_3(m,:)']';  

@@ -6,7 +6,7 @@ addpath('./Utilities')
 global goal
 global Cgoal pressure
 goal=[-0.1,0.1,0.55];
-Cgoal=[7,7,0.7];
+Cgoal=[0.7,5,5];
 Kgoal=diag(1./Cgoal);
 FitnessFunction = @simple_fitness;
 numberOfVariables = 6;
@@ -16,6 +16,7 @@ options = optimoptions('ga','PlotFcn','gaplotbestf');
 [q_opt,fval] = ga(FitnessFunction,numberOfVariables,[],[],[],[],lb,ub,[],options);
 
  q_opt=proj3s(q_opt',goal,0.005,1800)
+ pressure
 %%
 close all 
 figure(1)
