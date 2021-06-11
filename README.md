@@ -10,20 +10,6 @@ The followig code has been developed in Matlab 2020b and C++. The matlab package
 In the following video some demos of the soft manipulator are presented: 
 [![You tube video](http://i3.ytimg.com/vi/Uv5C1roZA9g/hqdefault.jpg)](https://www.youtube.com/watch?v=Uv5C1roZA9g)
  
-```bash
-pip install foobar
-```
-
-## Usage
-
-```matlab
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
