@@ -1,11 +1,14 @@
 function q_projected=proj3s(q,goal,epsilon,maxiteration)
-q_projected=0; %if it returns 0 it didn't converged to the nullspace manifold
+
+global q_opt
+q_projected=q; %if it returns 0 it didn't converged to the nullspace manifold
 for i=0:maxiteration
     
 Dx=constraint3s_error(q');% q has to be [q1c;q1a;q2c;q2a;q3c;q3a]
 if norm(Dx)<epsilon
     function_evaluations=i;
     q_projected=q;
+    q_opt=q_projected;
     break
 else
     if q(1)<0 

@@ -6,9 +6,9 @@ H=A_evaluator_variableL(q_L',goal_compliance);
 f=b_evaluator_variableL(q_L',goal_compliance);
 
 %constraints of the compliances
-k_min=0.1;%N/m% base stiffness of the chamber
-k_max=1.5;%0.019;%N/m%k_min*2;% inflated stiffness of the chamber
-k_l=1;
+k_min=0;%N/m% base stiffness of the chamber
+k_max=Inf;%1.5%0.019;%N/m%k_min*2;% inflated stiffness of the chamber
+k_l=1.5;
 A=[];
 b=[];
 Aeq=[0,0,1,0,0,0,0,0,0;0,0,0,0,0,1,0,0,0;0,0,0,0,0,0,0,0,1;1,-1,0,0,0,0,0,0,0;0,0,0,1,-1,0,0,0,0;0,0,0,0,0,0,1,-1,0];

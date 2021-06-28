@@ -9,7 +9,7 @@ for i=1:length(theta)
         y(i,u)=r*cos(theta(i)).*sin(phi(u));
         z(i,u)=r*sin(theta(i));
         
-        a=[K*[x(i,u);y(i,u);z(i,u)]]'./3;%./3 to make it fit in the picture 
+        a=[K*[x(i,u);y(i,u);z(i,u)]]'./5;%./3 to make it fit in the picture 
         x(i,u)=goal(1)+a(1);y(i,u)=goal(2)+a(2);z(i,u)=goal(3)+a(3);
     end
 end
